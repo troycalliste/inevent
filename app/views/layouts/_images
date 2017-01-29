@@ -1,0 +1,7 @@
+<%= link_to image_tag("client1.jpg", alt: "Club 1") %>
+<%= link_to image_tag("client2.jpg", alt: "Club 2") %>
+<%= link_to image_tag("client3.jpg", alt: "Club 3") %>
+<%= link_to image_tag("client4.jpg", alt: "Club 4") %>
+<%= link_to image_tag("client5.jpg", alt: "Club 5") %>
+<%= link_to image_tag("client6.jpg", alt: "Club 6") %>
+<%= link_to image_tag("client7.jpg", alt: "Club 7") %>

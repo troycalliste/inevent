@@ -1,0 +1,22 @@
+H1 for events
+h1 for venue choice
+h1 for datetime
+<button> Add New Event</button>
+<%= @events.each do |e|%>
+e.datetime
+e.picture
+e.title
+e.venue
+e.table_view
+e.reservations
+e.guestlist
+e.manage_inventory
+e.promote
+<% end %>
+<%= if listview %>
+(listview stylesheet)
+elseif calendarview
+calview stylesheet
+<%= end %>
+
+if else for past|upcoming views

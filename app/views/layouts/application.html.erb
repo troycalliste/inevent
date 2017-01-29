@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IN-EVENT</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <%= render "layouts/rails_default"%>
+</head>
+<body>
+  
+
+<nav>
+ <ul>
+  <li id="logo"> <%= link_to "In-Event", "home", id: "logo" %></li>
+  <li>Overview</li>
+  <li>Pricing</li>
+  <li>Social</li>
+  <li>Login</li>
+  <li>Get Started</li>
+ </ul>
+ </nav> 
+ <%= yield %>
+   <%= link_to "In-Event", "home", id: "logo" %>
+
+</body>
+</html>
