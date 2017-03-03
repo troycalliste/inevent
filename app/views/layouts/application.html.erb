@@ -8,20 +8,6 @@
   <%= render "layouts/rails_default"%>
 </head>
 <body>
-  
-
-<nav>
- <ul>
-  <li id="logo"> <%= link_to "In-Event", "home", id: "logo" %></li>
-  <li>Overview</li>
-  <li>Pricing</li>
-  <li>Social</li>
-  <li>Login</li>
-  <li>Get Started</li>
- </ul>
- </nav> 
- <%= yield %>
-   <%= link_to "In-Event", "home", id: "logo" %>
-
+  <%= yield %>
 </body>
 </html>

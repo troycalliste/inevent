@@ -6,3 +6,4 @@ class CreatePromoters < ActiveRecord::Migration
     end
   end
 end
+

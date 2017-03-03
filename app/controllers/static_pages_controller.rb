@@ -1,5 +1,9 @@
 class StaticPagesController < ApplicationController
-  def manage
+  def idk
+  end
+  
+  
+  def features
   end
 
 

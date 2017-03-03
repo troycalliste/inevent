@@ -1,0 +1,91 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<%= stylesheet_link_tag    'events1', media: 'all', 'data-turbolinks-track' => true %>
+<%= render "layouts/bootstrapdatereq" %>
+
+<ul>  
+  
+  </li>
+  <li class="back"><a href="/events"><</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn"><span class ="uptop"><%= @venus.first.name %><i class="fa fa-angle-down"></i></span></a>
+    <div class="dropdown-content">
+        <% @venus.each do |h| %>
+      <%= link_to "#{h.name}"  %>
+      <% end %>
+    </div>
+  <li><span class ="uptop">
+   
+  </span></li>
+   <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn"><span class ="uptop">All Reservations<i class="fa fa-angle-down"></i></span></a>
+    <div class="dropdown-content">
+      <a href="#">Selected Reservations</a>
+    </div>
+  </li>
+  
+  <li class="floatleft"><a href="/events/guestlist"><span class ="uptop">Guestlist</span></a></li>
+    <li class="floatleft"><a href="/events/1"><span class ="uptop">Reservations</span></a></li>
+    <li class="floatleft"><a href="#"><span class ="uptop">Tables View</span></a></li>  
+
+</ul>
+<div class="statsbar">
+  <ul>
+   <li><%= "#{@meep.count} out of #{@resos.count}"%></li>
+   <li><%= "#{@meep.sum(:min)} out of #{@resos.sum(:min)}"%></li>
+   <li><%= "#{@meep.sum(:spent)} out of #{@resos.sum(:spent)}"%></li>
+   <li class="yuh"><%= "#{@moopa}% / #{@foopa}% / #{@uoopa}%" %></li>
+   
+ </ul>
+ <div>
+     
+<div class="downabit">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.."> <button>List View</button>
+<button>Map View</button>
+<button>Add Reservation</button>
+
+<table id="myTable">
+    <div class="headfix">
+        <thead>
+  <tr class="header">
+    <th style="width:11%;">Name</th>
+    <th style="width:11%;">Guest<br> Count</th>
+    <th style="width:11%;">Min</th>
+    <th style="width:11%;">Spent</th>
+    <th style="width:11%;">Tables</th>
+    <th style="width:11%;">Status</th>
+    <th style="width:11%;">Server</th>
+    <th style="width:11%;">Added <br> By</th>
+    <th style="width:11%;">Notes</th>
+    <th style="width:11%;">Created At</th>
+  </tr>
+  </thead>
+  </div>
+  <tbody>
+   <div class="scrollpls">
+    <% @resas.each do |res| %>
+    <tr>
+        
+    <td><%= res.name %></td>
+    <td><%= res.guest_count %></td>
+    <td><%= res.min %></td>
+    <td><%= res.spent %></td>
+    <td><%= res.tables %></td>
+    <td><% if (res.checked_in== true) %> 
+    <button><%= res.status %></button>
+    <% else %> 
+    
+    <% end %></td>
+    <td><%= res.server %></td>
+    <td><%= res.added_by %></td>
+    <td><%= res.notes %></td>
+    <td><%= res.created_at %></td>
+    </tr>
+    <% end %>
+   
+    
+ 
+</div>
+</tbody>
+</table>
+</div>

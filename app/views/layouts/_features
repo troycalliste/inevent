@@ -1,39 +1,109 @@
-<div class="wonton">
-<h1>
- Features
-</h1>
-<br>
-<ul>
-    <li>
-        <h2>Event Management</h> <p>Publish events to your website, promoters, external concierges and partner applications.</p>
-        </li>
-    <li>
-        <h2>Reservations</h2><p>
+<div class="wonton text-center">
 
-Publish events to your website, promoters, external concierges and partner applications.</p>
-        </li>
-    <li>
-        <h2>Mobile Apps</h2><p>Centralize reservation data into a location accesible from anywhere.</p>
-        </li>
-    <li>
-        <h2>Guestlist</h2><p>Enable your entire staff to work on the go with NightPro's mobile apps available on iOS and Android.</p>
-        </li>
-    <li>
-        <h2>Table Management</h2><p>Manage and track general admission without slowing down the door.</p>
-        </li>
-    <li>
-        <h2>Team Management</h2><p>From a few booths to multi-story venues with hundreds of tables, we put realtime availability at your fingertips.</p>
-        </li>
-    <li>
-        <h2>Integrated Management</h2><p>Manage hundreds of promoters, sub-promoters, servers, hosts, concierges and staff members.</p>
-        </li>
-    <li>
-        <h2>Customer History</h2><p>Build NightPro into your website with our simple plugins and event pages.</p>
-        </li>
-    <li>
-        <h2>Reporting</h2><p>Build a client history and make it available when it matters, helping your staff provide the highest level of service.</p>
-        </li>
-</ul>
+      <section class="container features-list text-center" id="features">
+        
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h2 class="aligncenter margin-top-1em">Features</h2>
+          </div>
+        </div>
+
+        <div class="row aligncenter">
+          <div class="col-md-1 centered">
+            <i class="icon ion-ios7-calendar-outline"></i>
+          </div>
+          <div class="col-md-3 w">
+            <h5>Event Management</h5>
+            <hr>
+            <p class="small">Publish events to your website, promoters, external concierges and partner applications.</p>
+          </div>
+
+          <div class="col-md-1 centered">
+            <i class="icon ion-ios7-bookmarks-outline"></i>
+          </div>
+          <div class="col-md-3 w">
+            <h5>Reservations</h5>
+            <hr>
+            <p class="small">Centralize reservation data into a location accesible from anywhere.</p>
+          </div>
+
+          <div class="col-md-1 centered">
+            <i class="icon ion-iphone"></i>
+          </div>
+          <div class="col-md-3 w">
+            <h5>Mobile Apps</h5>
+            <hr>
+            <p class="small">Enable your entire staff to work on the go with NightPro's mobile apps available on iOS and Android.</p>
+          </div>
+        </div>
+        <!--/row -->
+        <div class="row">
+          <div class="col-md-1 centered">
+            <i class="icon ion-ios7-personadd-outline"></i>
+          </div>
+          <div class="col-md-3 w">
+            <h5>Guestlist, Tally &amp; Tickets</h5>
+            <hr>
+            <p class="small">Manage and track general admission without slowing down the door.</p>
+          </div>
+
+          <div class="col-md-1 centered">
+            <i class="icon ion-ios7-keypad-outline"></i>
+          </div>
+          <div class="col-md-3 w">
+            <h5>Table Management</h5>
+            <hr>
+            <p class="small">From a few booths to multi-story venues with hundreds of tables, we put realtime availability at your fingertips.</p>
+          </div>
+
+          <div class="col-md-1 centered">
+            <i class="icon ion-ios7-people-outline"></i>
+          </div>
+          <div class="col-md-3 w">
+            <h5>Team Management</h5>
+            <hr>
+            <p class="small">Manage hundreds of promoters, sub-promoters, servers, hosts, concierges and staff members.</p>
+          </div>
+        </div>
+        <!--/row -->
+        <div class="row">
+          <div class="col-md-1 centered">
+            <i class="icon ion-ios7-monitor-outline"></i>
+          </div>
+          <div class="col-md-3 w">
+            <h5>Integrated Websites</h5>
+            <hr>
+            <p class="small">Build NightPro into your website with our simple plugins and event pages.</p>
+          </div>
+
+          <div class="col-md-1 centered">
+            <i class="icon ion-ios7-chatboxes-outline"></i>
+          </div>
+          <div class="col-md-3 w">
+            <h5>Customer History</h5>
+            <hr>
+            <p class="small">Build a client history and make it available when it matters, helping your staff provide the highest level of service.</p>
+          </div>
+
+          <div class="col-md-1 centered">
+            <i class="icon ion-ios7-pie-outline"></i>
+          </div>
+          <div class="col-md-3 w">
+            <h5>Reporting</h5>
+            <hr>
+            <p class="small">Easy to read reports that help operators identify key staff members, track performance and even calculate commissions.</p>
+          </div>
+        </div>
+        <!--/row -->
+        <div class="twobuttons">
+        <div class="aligncenter margin-top-2em">
+          <span class="startem"><%= link_to "GET STARTED FREE", "/signup" %></span>
+          <p class="aligncenter">
+            <div class="productem"><%= link_to "GET TO KNOW OUR PRODUCT", "/features" %></div>
+          </p>
+        </div>
+        </div>
+      </section>
+
+   
 </div>
-<button>Read More Features</button>
-<button>Get Started Now</button>

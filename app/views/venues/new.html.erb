@@ -1,0 +1,15 @@
+<div class="vform">
+<%= form_for(@venu) do |v| %>
+<%= v.label "name" %>
+<%= v.text_field "name" %>
+
+
+<%= v.label "address" %>
+<%= v.text_field "address" %>
+
+<%= v.label "description" %>
+<%= v.text_field "description" %>
+
+<%= v.submit %>
+<% end %>
+</div>

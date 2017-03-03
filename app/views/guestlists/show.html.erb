@@ -1,0 +1,36 @@
+<table id="myotherTable">
+      <thead>
+  <tr class="header">
+    <th style="width:11%;">Name</th>
+    <th style="width:11%;">Count</th>
+    <th style="width:11%;">Cover</th>
+    <th style="width:11%;">Spent</th>
+    <th style="width:11%;">Status</th>
+    <th style="width:11%;"></th>
+    <th style="width:11%;">Added <br> By</th>
+    <th style="width:11%;">Notes</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <% @go.each do |g| %>
+    <td><%= g.name %></td>
+    <td><%= g.count %></td>
+    <td><%= g.cover %></td>
+    <td><%= g.spent %></td>
+    <td>
+        <% if (g.checked_in== true) %> 
+    <button><%= g.status %></button>
+        <% else %> 
+        <% end %>
+    </td>
+    <td><%= g.added_by %></td>
+    <td><%= g.notes %></td>
+
+    <% end %>    
+    </tr>
+    
+</tbody>
+</table>
+
+

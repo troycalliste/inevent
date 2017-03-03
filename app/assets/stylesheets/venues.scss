@@ -1,0 +1,149 @@
+// Place all the styles related to the Venues controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*.menubar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.woo {
+    float: left;
+ 
+}
+.waa {
+    float: right;
+    padding-right: 40px;
+    padding-left: 0px;
+}
+
+.menubar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    text-decoration: none;
+    color: black;
+    
+}
+.menubar ul li  {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    text-decoration: none;
+    color: black;
+}
+
+.menubar ul li a:hover {
+    background-color: #111;
+}
+.menubar ul li p {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    text-decoration: none;
+}*/
+
+.navbar-default {
+    background-color: #F8F8F8;
+    border-color: #E7E7E7;
+    padding-bottom: 58px;
+    z-index: -1;
+    border-bottom: 2px solid;
+    border-color: gray;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: #777;
+    font-size: 40px;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5E5E5E;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #777;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #333;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E7E7E7;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #DDD;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+    }
+}
+.form-group {
+ float: right;
+    border: 5px;
+    color: black;
+    z-index: -1;
+}
+.linkborder {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-color: black;
+    padding: 20.5px 14px;
+}  
+
+.tabdown {
+    padding-top: 100px;
+}
+
+
+

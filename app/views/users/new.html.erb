@@ -1,0 +1,25 @@
+<h1>SIGN UP!!!!!!!!</h1>
+<br>
+<%= form_for @user do |u| %>
+   <% if @user.errors.any? %>
+   <h2>Form is not valid</h2>
+     <% @user.errors.full_messages.each do |message|%>
+     <%= message %>
+     <% end %>
+   <% end %>
+
+<%= u.label "email" %>
+<%= u.text_field :email %>
+<br>
+
+<%= u.label "password" %>
+<%= u.password_field :password %>
+<br>
+<%= u.label "confirm password" %>
+<%= u.password_field :password_confirmation %>
+<br>
+
+<%= u.submit "Submit!" %>
+
+
+<% end %>

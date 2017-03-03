@@ -1,0 +1,101 @@
+<div class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+    <a class="navbar-brand">
+      Hey
+    </a>
+    <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse navHeaderCollapse">
+      
+      <ul class="nav navbar-nav navbar-left">
+        
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= @resos.first.name %><b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#show page for other venue reservations would go here"></li> #the resos venue above would simply output what the link in the list item leads to so it works perfectly.
+          <li><a href="#">yah</li>
+          <li><a href="#">ok</li>
+          
+        </ul>
+        </li>
+        <li><a href="#">Date<b class="caret"></b></a></li>
+        <li class='active'><a href="#">All Reservations<b class="caret"></b></a></li>
+
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"> Tables View</a></li>
+        <li><a href="#"> Reservations</a></li>
+        <li><a href="#"> Guestlist</a></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+</div>  
+  
+<div class='atest'></div>
+<span><%= "#{@resos.count} Total Reservations" %></span>
+<span><%= "#{@resos.pluck(:min)} Total Minimums" %></span>
+<span><%= "#{@resos.pluck(:spent)} Total Spent" %></span>
+<span><%= "#{@resos.count} Gender Split" %></span>
+</div>
+
+
+
+
+<table>
+  <thead>
+    <tr>
+      
+      <th>Name</th>
+      <th>Guest Count</th></th>
+      <th>Min</th>
+      <th>Spent</th>
+      <th>Tables</th>
+      <th>Status</th>
+      <th>Server</th>
+      <th>Added By</th>
+      <th>Notes</th>
+      <th>Venues Id</th>
+      <th colspan="10"></th>
+    </tr>
+  </thead>
+
+
+<div class='resindex'>
+<% @resos.each do |reso| %>
+<tr>
+<td><%= reso.name %></td>
+<td><%= reso.guest_count %></td>
+<td><%= reso.min %></td>
+<td><%= reso.spent %></td>
+<td><%= reso.tables%></td>
+<td><%= reso.status %></td>
+<td><%= reso.server %></td>
+<td><%= reso.added_by %></td>
+<td><%= reso.notes %></td>
+<td><%= reso.venues_id %></td>
+
+
+</tr>
+<% end %>
+<button><%= link_to 'Add New Reservation', new_reservation_path(@resos) %></button>
+</div>
+<div class='dropdown'>
+  <a data-toggle="dropdown" class="dropdown-toggle">
+    Actions
+    <span class='caret'></span>
+    </a>
+ <ul class='dropdown-menu'>
+   <li><a href='#'>Delete Selected</a></li>
+   <li class="divider"></li>
+   <li><a href='#'>Hide Stats</a></li>
+   <li class="divider"></li>
+   <li><a href='#'>Export to Excel</a></li>
+   <li><a href='#'>Print List</a></li>
+ </ul> 
+ </div>
+ 

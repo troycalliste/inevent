@@ -1,0 +1,7 @@
+ <select class="form-control" id="exampleSelect1"  onChange="window.location.href=this.value">
+    <% @venus.each do |this|%>
+      <option><%= link_to this.name, venue_path(this.id) %></option>
+      <% end %>
+      <option onClick="window.location = 'http://www.google.com'">A</option>
+    </select>
+  </div>

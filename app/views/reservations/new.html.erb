@@ -1,0 +1,52 @@
+<div class= 'resform'>
+<%= form_for(@reso) do |r| %>
+
+<%= r.label :name %>
+<%= r.text_field :name %><br>
+
+<%= r.label :guest_count %>
+<br><%= r.text_field :guest_count %>
+
+<%= r.label :min %>
+<%= r.text_field :min %><br>
+
+<%= r.label :spent %>
+<%= r.text_field :spent %><br>
+
+<%= r.label :tables %>
+<%= r.text_field :tables %>
+<br>
+<%= r.label :status %>
+<%= r.text_field :status %>
+<br>
+<%= r.label :server %>
+<%= r.text_field :server %>
+<br>
+<%= r.label :added_by %>
+<%= r.text_field :added_by %>
+<br>
+<%= r.label :notes %>
+<%= r.text_field :notes %>
+
+<%= r.label "venue" %>
+<%= r.number_field :venue_id %>
+
+<%= r.label "event" %>
+<%= r.number_field :event_id %>
+ 
+ <%= r.label "check in" %>
+<%= r.check_box :checked_in %>
+
+ <%= r.label "male user" %>
+<%= r.number_field :male_user %>
+
+ <%= r.label "female user" %>
+<%= r.number_field :female_user %>
+
+ <%= r.label "unisex user" %>
+<%= r.number_field :unisex_user %>
+
+<%= r.submit %>
+
+<% end %>
+</div>

@@ -1,22 +1,50 @@
-<header>
-     
-<h1>RE(IN-EVENT) THE WAY YOU MANAGE YOUR <strong>VENUE</strong></h1>
-<p class="light">A CRM solution for the most in-demand events in the world</p>
-<div class='demo'>
+<link href='//fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
+<link href='//fonts.googleapis.com/css?family=Arsenal' rel='stylesheet'>
+
+<header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+
+<nav id= "whoa">
+ <ul class="nav navbar-nav navbar-right">
+  <li><%= link_to "OVERVIEW" %></li>
+  <li><%= link_to "PRICING" %></li>
+  <li><%= link_to "SOCIAL" %></li>
+  <li id="logged"><span class="button"><%= link_to "LOGIN", '/login' %></span></li>
+ <li id="start"><span class="butto"><%= link_to "GET STARTED", new_user_path %></span></li>
+ </ul>
+  <ul class="nav navbar-nav navbar-left">
+  <li class="lgo"><%= link_to image_tag("logo.png", height: 42, width: 100), {action: 'home', controller: 'static_pages'} %></li>
+  </ul>
+</div>
+</nav> 
+</header>
+
+<div class="peepspic">
+ <div class="spacetop">
+    <div class="textfade">
+      <h1 class= "headcent"><strong>RE(IN-EVENT)</strong> THE WAY YOU MANAGE YOUR VENUE</h1>
+      <p class="light">A CRM solution for the most in-demand events in the world</p>
     
-<a  href="#">TRY OUR DEMO</a>
+       <div class='demo'>
+    
+        <a href="#">TRY OUR DEMO</a>
+    </div>
+  </div>
+  </div>
 </div>
 <span>
     <a href="">
         <i class="down-icon">
-                ::before    
+               
         </i>
     </a> 
 </span>
-</header>
+
 <%= render "layouts/features"%>
 <%= render "layouts/work"%>
 <%= render "layouts/bottomhalf"%>
-<%= render "layouts/images"%>
+<%= render "layouts/grid"%>
 <%= render "layouts/midbottom"%>
 <%= render "layouts/footer"%>
+
+

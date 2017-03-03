@@ -1,0 +1,35 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<%= stylesheet_link_tag    'events1', media: 'all', 'data-turbolinks-track' => true %>
+<%= render "layouts/bootstrapdatereq" %>
+
+<ul>  
+  
+  </li>
+  <li class="back"><a href="/events"><</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn"><span class ="uptop"><%= @venus.first.name %><i class="fa fa-angle-down"></i></span></a>
+    <div class="dropdown-content">
+        <% @venus.each do |h| %>
+      <%= link_to "#{h.name}"  %>
+      <% end %>
+    </div>
+  <li><span class ="uptop">
+   
+  </span></li>
+   <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn"><span class ="uptop">All Reservations<i class="fa fa-angle-down"></i></span></a>
+    <div class="dropdown-content">
+      <a href="#">Selected Reservations</a>
+    </div>
+  </li>
+  
+  <li class="floatleft"><a href="/events/guestlist"><span class ="uptop">Guestlist</span></a></li>
+    <li class="floatleft"><a href="/events/1"><span class ="uptop">Reservations</span></a></li>
+    <li class="floatleft"><a href="#"><span class ="uptop">Tables View</span></a></li>  
+
+</ul>
+
+<% @guesas.each do |g| %>
+<%= g.name %>
+<% end %> 

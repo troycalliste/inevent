@@ -1,0 +1,26 @@
+
+<%= form_for([@event, @event.reservations.build]) do |r| %>
+
+<%= r.label :name %>
+<%= r.text_field :name %><br>
+
+<%= r.label :guest_count %>
+<br><%= r.text_field :guest_count %>
+
+<%= r.label :min %>
+<%= r.text_field :min %><br>
+
+<%= r.label :spent %>
+<%= r.text_field :spent %><br>
+
+<%= r.label :tables %>
+<%= r.text_field :tables %>
+<br>
+<%= r.label :status %>
+<%= r.text_field :status %>
+<br>
+
+
+<%= r.submit %>
+
+<% end %>

@@ -1,22 +1,16 @@
-H1 for events
-h1 for venue choice
-h1 for datetime
-<button> Add New Event</button>
-<%= @events.each do |e|%>
-e.datetime
-e.picture
-e.title
-e.venue
-e.table_view
-e.reservations
-e.guestlist
-e.manage_inventory
-e.promote
-<% end %>
-<%= if listview %>
-(listview stylesheet)
-elseif calendarview
-calview stylesheet
-<%= end %>
+<br>
+<div class="forpadding">
 
-if else for past|upcoming views
+<% @events.each do |e| %>
+<%= e.name %>
+<%= e.date.strftime("%b") %>
+<%= e.date.strftime("%d") %>
+<%= e.date.strftime("%Y") %>
+<%= link_to "Tables View", event_path(e)%>
+<%= link_to "Reservations", event_reservations_path(e)%>
+<%= link_to "Guestlist", event_guestlists_path(e)%>
+<%= link_to "Manage Inventory", event_path(e)%>
+<%= link_to "Promote", event_path(e)%><br>
+<% end %>
+
+</div>
