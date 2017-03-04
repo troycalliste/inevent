@@ -1,19 +1,27 @@
 <div class= "testimonies">
-<h2>
+<div class="col-sm-6">    
+<h4>
     "Troy has taken In-Event to the next level.
     The new app is incredibly fast and easy to use. Even Congress loves it.
     Our operations are running smoothly, we know more about our guests than ever before, 
     and our sales have increased with this integration"
-</h2>
-<p> Barack Obama</p>
-<h3>Former President</h3>
-
-<h2>
-"Few applications deliver even half of what they promise but In-Event goes beyond the status quo: it's changed the way I do business at my nightclub."
-</h2>
-<p> Justin Bieber</p>
-<h3>Club Owner</h3>
+</h4>
+<p> Former President</p>
+<h3>Barack Obama</h3>
 </div>
 
+<div class="col-sm-6">
+<h4 class="headspace">
+"Few applications deliver even half of what they promise but In-Event goes beyond the status quo: it's changed the way I do business at my nightclub."
+</h4>
+<p>Club Owner</p>
+<h3>Justin Bieber</h3>
+</div>
+</div>
+
+<div class="client">
 <h1>Our Clients</h1>
-<p> In-event is used by venues and organizations of all sizes. From small independent venues to world famous hospitality groups, here are just a few of the companies that trust In-event to run their night.</p>
+<p> In-event is used by venues and organizations of all sizes. 
+From small independent venues to world famous hospitality groups, 
+here are just a few of the companies that trust In-event to run their night.</p>
+</div>

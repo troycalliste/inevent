@@ -97,7 +97,7 @@
 }
 
 .col-sm-6{
-    padding-left: 10px;
+    padding-right: 1px;
 }
    
 
@@ -217,9 +217,13 @@ li a {
 }
 
 img {
-    padding-bottom: 15px;
-    padding-top: 2px;
-    margin-top: 0px;
+    //padding-bottom: 15px;
+   // padding-top: 2px;
+   // margin-top: 0px;
+}
+
+.customer {
+    padding-left: 10px;
 }
 
 .twobuttons {
@@ -312,3 +316,65 @@ img {
 //     padding-right: 200px;
     
 // }
+.centrow {
+     margin: auto; 
+     max-width: 900px;
+}
+
+.featfix {
+    padding-left: 80px;
+    max-width: 980px;
+}
+
+// testimonies
+
+.testimonies {
+    padding-bottom: 200px;
+}
+
+.headspace {
+    padding-bottom: 38px;
+}
+
+
+.testimonies h4 {
+    font-style: italic;
+    
+}
+.testimonies h3 {
+    font-weight: bold;
+    font-size: 14px;
+    
+}
+.testimonies p {
+    font-size: 11px;
+    
+}
+
+.client {
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+}
+
+.client p {
+    text-align: left;
+}
+
+
+// client picture grid
+
+.picgrid {
+   padding-right: 176px;
+}
+
+.row {
+    padding-bottom: 2px;
+}
+
+.customer {
+    float: right;
+    padding-right: 4px;
+    padding-left: 0px;
+}
+

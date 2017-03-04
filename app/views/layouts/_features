@@ -7,7 +7,7 @@
             <h2 class="aligncenter margin-top-1em">Features</h2>
           </div>
         </div>
-
+      <div class="featfix">
         <div class="row aligncenter">
           <div class="col-md-1 centered">
             <i class="icon ion-ios7-calendar-outline"></i>
@@ -66,6 +66,7 @@
           </div>
         </div>
         <!--/row -->
+        
         <div class="row">
           <div class="col-md-1 centered">
             <i class="icon ion-ios7-monitor-outline"></i>
@@ -93,8 +94,10 @@
             <hr>
             <p class="small">Easy to read reports that help operators identify key staff members, track performance and even calculate commissions.</p>
           </div>
+        
         </div>
         <!--/row -->
+        </div>
         <div class="twobuttons">
         <div class="aligncenter margin-top-2em">
           <span class="startem"><%= link_to "GET STARTED FREE", "/signup" %></span>
