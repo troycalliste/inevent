@@ -1,3 +1,4 @@
+
 <div class= "midbottom">
 <div>$</div>
 <div>59</div>
@@ -5,4 +6,7 @@
 <button>Try it now for FREE</button>
 <p>30 day free trial. Add additional 
 venues for $99 per month</p>
+</div>
+<div class="">
+    <%= image_tag('macbook.png', height: 300, width: 550) %>
 </div>

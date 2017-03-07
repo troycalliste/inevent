@@ -1,16 +1,34 @@
-<br>
-<div class="forpadding">
+ <%= stylesheet_link_tag    'events1', media: 'all', 'data-turbolinks-track' => true %>
+ <link href='//fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
+<%= render "layouts/verticlenav"%>
+
+
+<div style="margin-left: 15%;"> 
+<%= render "layouts/uppernav"%>
+<!--#were going to have to figure out the div height^ when theres more events than can fit in that height-->
+
 
 <% @events.each do |e| %>
-<%= e.name %>
-<%= e.date.strftime("%b") %>
-<%= e.date.strftime("%d") %>
-<%= e.date.strftime("%Y") %>
+<div class="wrp">
+<div class="otw">
+<div class="edate">
+<span class="tad"><%= e.created_at.strftime("%b").to_s %></span>
+<span class="tad"><%= e.created_at.strftime("%d").to_s %></span>
+<span class="tad"><%= e.created_at.strftime("%Y").to_s %></span>
+</div>
+<div class="otr">
+<span class="non"><%= e.name %></span>
 <%= link_to "Tables View", event_path(e)%>
 <%= link_to "Reservations", event_reservations_path(e)%>
 <%= link_to "Guestlist", event_guestlists_path(e)%>
 <%= link_to "Manage Inventory", event_path(e)%>
 <%= link_to "Promote", event_path(e)%><br>
+
+</div>
+</div>
+</div>
 <% end %>
 
 </div>
+
+

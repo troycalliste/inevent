@@ -1,7 +1,8 @@
 <div class="work">
 <h1 class= "howdy">Work On The Go</h1>
 <span class="par"><p>Give your staff a way to input reservations,
-add guests, and check their status through out the night right from your smartphone</p></span>
-<div class="imgborder"><span class="whh"><%= image_tag('appstore.png', height: 54, width: 120) %><span>
-<span class="whw"><%= image_tag('google.png', height: 54, width: 120) %></span></div>
+add guests, and check their status through out the night right from your smartphone <%= image_tag('iphone.png', height: 320, width: 200) %></p></span>
+<div class="imgborder"><span class="whh"><%= image_tag('appstore.png', height: 54, width: 170) %><span>
+<span class="whw"><%= image_tag('google.png', height: 54, width: 170) %></span></div>
 </div>
+

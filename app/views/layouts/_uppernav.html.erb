@@ -1,0 +1,16 @@
+<div>
+<ul class="uni">
+   <li class="evn"><a class="active" href="#home">Home</a></li>
+   <li><div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+      <% @venus.each do |v| %>
+      <%= link_to v.name, venue_path(v) %>
+      <% end %>
+  </div>
+</li>
+   <li class="uli"><a href="#news">News</a></li>
+   <li class="uli"><a href="#contact">Contact</a></li>
+   <li class="uli"><a href="events/new">Add New Event</li>
+</ul>
+</div>

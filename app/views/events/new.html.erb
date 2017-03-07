@@ -1,0 +1,20 @@
+<h1>New Event</h1>
+<br>
+<%= form_for @evo do |u| %>
+ 
+<%= u.label "name" %>
+<%= u.text_field :name %>
+
+<%= u.label "table view" %>
+<%= u.number_field :table_view %>
+<br>
+
+
+<br>
+
+<br>
+
+<%= u.submit "Submit!" %>
+
+
+<% end %>
